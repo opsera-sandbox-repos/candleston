@@ -269,8 +269,7 @@ module.exports.looping = function(req, res){
         name[i] = $i + "Field Services"
     }
     console.log("printing name : ", name[i])
-    console.log("printing a sample webhook commit");
-
+    console.log("updating the comment to test webhook");
 };
   
 // 'Authorization' : 'Basic '+Buffer.from('admin'+':'+'CZ7drlbxRDG7').toString('base64')
