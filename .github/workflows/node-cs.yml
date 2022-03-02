@@ -48,7 +48,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - run: echo "deploying code to dev environment"
-    - run: echo "**e1-deploy execution status : success"
+    - run: echo "**e1-deploy execution status:success"
     
   e2-deploy:
     name: Deploy to Staging
@@ -56,7 +56,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - run: echo "deploying code to staging environment"
-    - run: echo "**e2-deploy execution status : success"
+    - run: echo "**e2-deploy execution status:success"
   
   e3-promote:
     name: Promote to Production
@@ -64,4 +64,4 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - run: echo "promoting code to Production environment"
-    - run: echo "**e3-promote execution status : success"
+    - run: echo "**e3-promote execution status:success"
