@@ -1,0 +1,67 @@
+name: node-cs
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
+
+jobs:
+  build:
+    name: build
+    env:    
+      JOBENV: build-e1
+      
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [14.17.0]
+        
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm install
+    - run: npm test
+  
+  codescan:
+    name: sonar scan
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: SonarQube Scan
+    
+#       uses: kitabisa/sonarqube-action@v1.1.0
+#       with:
+#         host: ${{ secrets.SONARQUBE_HOST }}
+#         login: ${{ secrets.SONARQUBE_TOKEN }}
+#         on: push
+
+  e1-deploy:
+    name: Deploy to dev
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - run: echo "deploying code to dev environment"
+    - run: echo "**e1-deploy execution status : success"
+    
+  e2-deploy:
+    name: Deploy to Staging
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - run: echo "deploying code to staging environment"
+    - run: echo "**e2-deploy execution status : success"
+  
+  e3-promote:
+    name: Promote to Production
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - run: echo "promoting code to Production environment"
+    - run: echo "**e3-promote execution status : success"
