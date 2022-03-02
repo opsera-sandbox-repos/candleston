@@ -1,0 +1,19 @@
+{
+  "name": "candleston",
+  "version": "1.0.0",
+  "description": "candleston backend project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apat35/candleston.git"
+  },
+  "author": "apat35",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apat35/candleston/issues"
+  },
+  "homepage": "https://github.com/apat35/candleston#readme"
+}
