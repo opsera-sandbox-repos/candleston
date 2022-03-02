@@ -34,7 +34,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: SonarQube Scan
+    - name: sonar scan
+    - run: echo "sonar scan step executed"
     
 #       uses: kitabisa/sonarqube-action@v1.1.0
 #       with:
