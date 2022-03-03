@@ -1,4 +1,4 @@
-name: node-cs
+name: node-cs-prod
 
 on:
   push:
@@ -29,25 +29,10 @@ jobs:
     - run: npm install
     - run: npm test
   
-#   codescan:
-#     name: sonar scan
-#     runs-on: ubuntu-latest
-#     steps:
-#     - uses: actions/checkout@master
-#     - name: sonar scan
-#     - run: echo "sonar scan step executed"
-    
-#       uses: kitabisa/sonarqube-action@v1.1.0
-#       with:
-#         host: ${{ secrets.SONARQUBE_HOST }}
-#         login: ${{ secrets.SONARQUBE_TOKEN }}
-#         on: push
-
-  e1-deploy:
-    name: Deploy to dev
+  e3-promote:
+    name: Promote to Production
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - run: echo "deploying code to dev environment"
-    - run: echo "**e1-deploy execution status:success"
-    
+    - run: echo "promoting code to Production environment"
+    - run: echo "**e3-promote execution status:success"

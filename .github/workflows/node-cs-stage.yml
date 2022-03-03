@@ -1,4 +1,4 @@
-name: node-cs
+name: node-cs-stage
 
 on:
   push:
@@ -28,26 +28,11 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm test
-  
-#   codescan:
-#     name: sonar scan
-#     runs-on: ubuntu-latest
-#     steps:
-#     - uses: actions/checkout@master
-#     - name: sonar scan
-#     - run: echo "sonar scan step executed"
     
-#       uses: kitabisa/sonarqube-action@v1.1.0
-#       with:
-#         host: ${{ secrets.SONARQUBE_HOST }}
-#         login: ${{ secrets.SONARQUBE_TOKEN }}
-#         on: push
-
-  e1-deploy:
-    name: Deploy to dev
+  e2-deploy:
+    name: Deploy to Staging
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - run: echo "deploying code to dev environment"
-    - run: echo "**e1-deploy execution status:success"
-    
+    - run: echo "deploying code to staging environment"
+    - run: echo "**e2-deploy execution status:success"
