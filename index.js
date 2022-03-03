@@ -1,3 +1,2 @@
+console.log("testing candleston app success.. will run on port 3000");
 
-console.log("Printing from a new file");
-console.log("Printing the new line");
