@@ -1,4 +1,6 @@
 var mongoose = require('mongoose');
+var dburl = 'mongodb://localhost:27017/candleston';
+// var dburl = 'mongodb://vishnu:vishy811@ds219000.mlab.com:19000/shrishti';
 mongoose.connect(dburl);
 
 mongoose.connection.on('connected', function(){
