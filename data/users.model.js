@@ -16,7 +16,7 @@ var usersSchema = new mongoose.Schema({
     }, 
     role: {
         type: String, 
-        enum : ['Admin', 'Manager', 'Executive']
+        enum : ['Admin', 'Manager', 'Executive'],
         required: true
     },
     branch: { 
