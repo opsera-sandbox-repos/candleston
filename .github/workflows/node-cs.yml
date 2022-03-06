@@ -28,20 +28,6 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm test
-  
-#   codescan:
-#     name: sonar scan
-#     runs-on: ubuntu-latest
-#     steps:
-#     - uses: actions/checkout@master
-#     - name: sonar scan
-#     - run: echo "sonar scan step executed"
-    
-#       uses: kitabisa/sonarqube-action@v1.1.0
-#       with:
-#         host: ${{ secrets.SONARQUBE_HOST }}
-#         login: ${{ secrets.SONARQUBE_TOKEN }}
-#         on: push
 
   e1-deploy:
     name: Deploy to dev
