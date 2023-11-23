@@ -29,10 +29,10 @@ jobs:
     - run: npm install
     - run: npm test
     
-  e2-deploy:
-    name: Deploy to Staging
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - run: echo "deploying code to staging environment"
-    - run: echo "**e2-deploy execution status:success"
+  # e2-deploy:
+  #   name: Deploy to Staging
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - uses: actions/checkout@master
+  #   - run: echo "deploying code to staging environment"
+  #   - run: echo "**e2-deploy execution status:success"
