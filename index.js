@@ -17,4 +17,4 @@ console.log("committing to test Ajay's code");
 
 console.log("committing new line ");
 
-console.loy 
+console.log("Creating a new commit"); 
