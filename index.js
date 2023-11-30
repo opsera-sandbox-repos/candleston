@@ -20,9 +20,3 @@ console.log("committing new line ");
 console.log("Creating a new commit"); 
 
 console.log("Creating a new commit"); 
-
-console.log("committing new line ");
-
-console.log("Creating a new commit"); 
-
-console.log("Creating a new commit"); 
