@@ -28,3 +28,7 @@ console.log("Creating a new commit");
 console.log("Creating a new commit"); 
 
 console.log("playground setup"); 
+
+console.log("Creating a new commit"); 
+
+console.log("playground setup"); 
