@@ -1,0 +1,52 @@
+[{
+    "_id": {
+      "$oid": "63efd84fd77f436d2a94f7d2"
+    },
+    "createdDate": "2023-08-18T04:23:30+0000",
+    "updatedDate": "2023-09-01T13:52:01+0000",
+    "componentName": "opsera-sap-cpq-integrator:src/main/java/com/opsera/integrator/sapcpq/service/UnzipUtility.java",
+    "componentKey": "AYpRBEUhhpVB0jfAbdL7",
+    "componentRule": "java:S899",
+    "project": "opsera-sap-cpq-integrator",
+    "line": 83,
+    "hash": "22b52cdc1303da5309ced103592e55fc",
+    "textRange": {
+        "startLine": 83,
+        "endLine": 83,
+        "startOffset": 16,
+        "endOffset": 30
+    },
+    "remediationEffort": "15min",
+    "remediationDebt": "15min",
+    "author": "purusothaman@purusothamans-macbook-pro-2.local",
+    "cwe": [
+      {
+        "activityDate": "",
+        "identifier": "754",
+        "description": "message from sonarqube", 
+        "impact" : "consequences from cwe data",
+        "impactNote" :"consequence notes from cwe data",
+        "status": "status",
+        "severity": "severity",
+        "mitigation" : {
+            "mitigationId" : "mitigation from cwe data",
+            "mitigationPhase" : "mitigation phase from cwe data",
+            "mitigationDescription" : "mitigation description from cwe data"
+        },
+        "cweDescription" : "extended description from cwe data",
+        "cweLink": "https://cwe.mitre.org/data/definitions/754.html",
+        "cweSeverity": "likelihood of exploit"
+      }
+    ],
+    "owasp" : [
+        {
+            "owaspIdentifier" : "owaspAsvs-4.0",
+            "identifier" : "11.1.7"
+        },
+        {
+            "owaspIdentifier" : "owaspTop10-2021"
+        }
+
+    ]
+}  
+]

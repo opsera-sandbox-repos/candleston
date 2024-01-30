@@ -1,0 +1,17 @@
+{
+    "uuid": "${bamboo.webhook.uuid}",
+    "timestamp": "${bamboo.webhook.timestamp}",
+    "notification": "${bamboo.webhook.notification.description}",
+    "webhook": {
+      "webhookTemplatedId": "${bamboo.webhook.template.id}",
+      "webhookTemplatedName": "${bamboo.webhook.template.name}"
+    },
+    "data": {
+      "stepId": "${bamboo.buildResultKey}",
+      "stepStatus": "${bamboo.buildState}",
+      "stepStartTime": "${bamboo.date.started}",
+      "stepEndTime": "${bamboo.date.finished}",
+      "stepName": "${bamboo.buildPlanName}",
+      "resultsUrl" : "${bamboo.resultsUrl}"
+    }
+  }

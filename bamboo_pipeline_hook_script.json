@@ -1,0 +1,25 @@
+{
+    "uuid": "${bamboo.webhook.uuid}",
+    "timestamp": "${bamboo.webhook.timestamp}",
+    "notification": "${bamboo.webhook.notification.description}",
+    "webhook": {
+      "webhookTemplatedId": "${bamboo.webhook.template.id}",
+      "webhookTemplatedName": "${bamboo.webhook.template.name}"
+    },
+    "data": {
+      "pipelineId": "${bamboo.buildResultKey}",
+      "status": "${bamboo.buildState}",
+      "pipelineName": "${bamboo.buildPlanName}",
+      "pipelineStartTime": "${bamboo.date.started}",
+      "pipelineEndTime": "${bamboo.date.finished}",
+      "triggerReason": "${bamboo.trigger.reason}",
+      "triggerSentence": "${bamboo.trigger.name.for.sentence}", 
+      "pipelineRunCount": "${bamboo.buildNumber}", 
+      "branch" : "${bamboo.planRepository.branchName}",
+      "projectUrl" : "${bamboo.planRepository.repositoryUrl}", 
+      "projectName": "${bamboo.planRepository.name}",
+      "pipelineCommitSha": "${bamboo.planRepository.revision}", 
+      "previousPipelineCommitSha": "${bamboo.planRepository.previousRevision}",
+      "resultUrl" : "${bamboo.resultsUrl}"
+    }
+  }

@@ -1,0 +1,139 @@
+[{
+    "_id": {
+      "$oid": "63efd5c9d77f436d2a94f7ce"
+    },
+    "startTimestamp": "2023-02-14T19:33:22.659Z",
+    "endTimestamp": "2023-02-14T19:34:03.336Z",
+    "toolIdentifier": "aquasec",
+    "activityDate": "2023-02-14T19:33:22.659Z",
+    "customerId": "60785c10ae42330133c55f7e",
+    "toolData": {
+      "pipelineId": "6239d99a6d66300043c1aec7",
+      "taskId": "6239d99a6d66300043c1",
+      "stepId": "5f12fb88d703e0cb5d13e8b2",
+      "branch": "master",
+      "giturl": "https://gitlab.com/opsera-repo/java-microservices/aws-service.git",
+      "gitType": "gitlab",
+      "type": "scan",
+      "scanDuration": 7,
+      "imageSize": 497518591,
+      "imageName": "inventory-availability_opsera:623270b79df7384e79724b02ddfed3d45f293aa1",
+      "components": [
+        {
+          "component_name": "curl",
+          "component_version": "7.79.1-r4"
+        }
+      ]
+    }
+  },{
+    "_id": {
+      "$oid": "63efd611d77f436d2a94f7cf"
+    },
+    "startTimestamp": "2023-02-15T19:33:22.659Z",
+    "endTimestamp": "2023-02-15T19:34:03.336Z",
+    "toolIdentifier": "aquasec",
+    "activityDate": "2023-02-15T19:33:22.659Z",
+    "customerId": "60785c10ae42330133c55f7e",
+    "toolData": {
+      "pipelineId": "6239d99a6d66300043c1aec8",
+      "taskId": "6239d99a6d66300043c2",
+      "stepId": "5f12fb88d703e0cb5d13e8b3",
+      "branch": "master",
+      "giturl": "https://gitlab.com/opsera-repo/java-microservices/aws-service.git",
+      "gitType": "gitlab",
+      "type": "scan",
+      "scanDuration": 7,
+      "imageSize": 497518591,
+      "imageName": "inventory-availability_opsera:623270b79df7384e79724b02ddfed3d45f293aa2",
+      "components": [
+        {
+          "component_name": "curl",
+          "component_version": "7.79.1-r5"
+        },
+        {
+          "component_name": "express",
+          "component_version": "4.3.2"
+        }
+      ]
+    }
+  },{
+    "_id": {
+      "$oid": "63f477812885eb0af254b62d"
+    },
+    "activityDate": {
+      "$date": {
+        "$numberLong": "1676965760017"
+      }
+    },
+    "startTimestamp": {
+      "$date": {
+        "$numberLong": "1676965340017"
+      }
+    },
+    "endTimestamp": {
+      "$date": {
+        "$numberLong": "1676965760017"
+      }
+    },
+    "toolIdentifier": "aquasec",
+    "customerId": "60157c8c70628140f776e359",
+    "toolData": {
+      "pipelineId": "63d500f607ef53002eda4065",
+      "stepId": "63d5038207ef53002eda44ad",
+      "runCount": 4,
+      "branch": "main",
+      "giturl": "https://github.com/purusothamanns/spring-boot-hello-world-example",
+      "gitType": "github",
+      "type": "container-scan",
+      "scanDuration": 7,
+      "imageSize": 497518591,
+      "imageName": "inventory-availability_opsera:623270b79df7384e79724b02ddfed3d45f293aa1",
+      "components": [
+        {
+          "componentName": "curl",
+          "componentVersion": "7.79.1-r4"
+        }
+      ]
+    },
+    "_class": "com.opsera.integrator.twistlock.resources.TransformedDataSecurityActivity"
+  },{
+    "_id": {
+      "$oid": "63fc5d7e2885eb0af254b632"
+    },
+    "activityDate": {
+      "$date": {
+        "$numberLong": "1677483389730"
+      }
+    },
+    "startTimestamp": {
+      "$date": {
+        "$numberLong": "1677482969730"
+      }
+    },
+    "endTimestamp": {
+      "$date": {
+        "$numberLong": "1677483389730"
+      }
+    },
+    "toolIdentifier": "aquasec",
+    "customerId": "60157c8c70628140f776e359",
+    "toolData": {
+      "pipelineId": "63d500f607ef53002eda4065",
+      "stepId": "63d5038207ef53002eda44ad",
+      "runCount": 5,
+      "branch": "main",
+      "giturl": "https://github.com/purusothamanns/spring-boot-hello-world-example",
+      "gitType": "github",
+      "type": "container-scan",
+      "scanDuration": 7,
+      "imageSize": 497518591,
+      "imageName": "inventory-availability_opsera:623270b79df7384e79724b02ddfed3d45f293aa1",
+      "components": [
+        {
+          "componentName": "coverity",
+          "componentVersion": "3.0.2"
+        }
+      ]
+    },
+    "_class": "com.opsera.integrator.twistlock.resources.TransformedDataSecurityActivity"
+  }]

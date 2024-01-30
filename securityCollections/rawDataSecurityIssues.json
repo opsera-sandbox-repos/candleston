@@ -1,0 +1,32 @@
+{
+    "key": "AYpRBEUhhpVB0jfAbdL7",
+    "rule": "java:S899",
+    "severity": "MINOR",
+    "component": "opsera-sap-cpq-integrator:src/main/java/com/opsera/integrator/sapcpq/service/UnzipUtility.java",
+    "project": "opsera-sap-cpq-integrator",
+    "line": 83,
+    "hash": "22b52cdc1303da5309ced103592e55fc",
+    "textRange": {
+        "startLine": 83,
+        "endLine": 83,
+        "startOffset": 16,
+        "endOffset": 30
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Do something with the \"boolean\" value returned by \"delete\".",
+    "effort": "15min",
+    "debt": "15min",
+    "author": "purusothaman@purusothamans-macbook-pro-2.local",
+    "tags": [
+        "cert",
+        "cwe",
+        "error-handling"
+    ],
+    "creationDate": "2023-08-18T04:23:30+0000",
+    "updateDate": "2023-09-01T13:52:01+0000",
+    "type": "VULNERABILITY",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": []
+}

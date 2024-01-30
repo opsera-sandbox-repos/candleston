@@ -1,0 +1,123 @@
+[{
+    "_id": {
+      "$oid": "63efd84fd77f436d2a94f7d2"
+    },
+    "componentName": "curl",
+    "license": "MIT",
+    "source": "curl",
+    "versionNumber": "7.79.1-r4",
+    "summaryCounts": {
+      "securityRisk": {
+        "critical": 2,
+        "high": 1,
+        "total": 3
+      }
+    },
+    "cve": [
+      {
+        "activityDate": {
+          "$date": {
+            "$numberLong": "1676403202659"
+          }
+        },
+        "identifier": "CVE-2022-32221",
+        "description": "When doing HTTP(S) transfers, libcurl might erroneously use the read callback (`CURLOPT_READFUNCTION`) to ask for data to send, even when the `CURLOPT_POSTFIELDS` option has been set, if the same handle previously was used to issue a `PUT` request which used that callback. This flaw may surprise the application and cause it to misbehave and either send off the wrong data or use memory after free or similar in the subsequent `POST` request. The problem exists in the logic for a reused handle when it is changed from a PUT to a POST.",
+        "overallscore": 9.8,
+        "status": "new",
+        "severity": "critical",
+        "nvdLink": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-32221",
+        "nvdScore": 9.8,
+        "nvdSeverity": "critical"
+      },
+      {
+        "activityDate": {
+          "$date": {
+            "$numberLong": "1676403202659"
+          }
+        },
+        "identifier": "CVE-2022-42915",
+        "description": "curl before 7.86.0 has a double free. If curl is told to use an HTTP proxy for a transfer with a non-HTTP(S) URL, it sets up the connection to the remote server by issuing a CONNECT request to the proxy, and then tunnels the rest of the protocol through. An HTTP proxy might refuse this request (HTTP proxies often only allow outgoing connections to specific port numbers, like 443 for HTTPS) and instead return a non-200 status code to the client. Due to flaws in the error/cleanup handling, this could trigger a double free in curl if one of the following schemes were used in the URL for the transfer: dict, gopher, gophers, ldap, ldaps, rtmp, rtmps, or telnet. The earliest affected version is 7.77.0.",
+        "overallscore": 9.8,
+        "status": "new",
+        "severity": "critical",
+        "nvdLink": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42915",
+        "nvdScore": 9.8,
+        "nvdSeverity": "critical"
+      },
+      {
+        "activityDate": {
+          "$date": {
+            "$numberLong": "1676403202659"
+          }
+        },
+        "identifier": "CVE-2022-42916",
+        "description": "In curl before 7.86.0, the HSTS check could be bypassed to trick it into staying with HTTP. Using its HSTS support, curl can be instructed to use HTTPS directly (instead of using an insecure cleartext HTTP step) even when HTTP is provided in the URL. This mechanism could be bypassed if the host name in the given URL uses IDN characters that get replaced with ASCII counterparts as part of the IDN conversion, e.g., using the character UTF-8 U+3002 (IDEOGRAPHIC FULL STOP) instead of the common ASCII full stop of U+002E (.). The earliest affected version is 7.77.0 2021-05-26.",
+        "overallscore": 7.5,
+        "status": "new",
+        "severity": "high",
+        "nvdLink": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42916",
+        "nvdScore": 7.5,
+        "nvdSeverity": "high"
+      }
+    ]
+  },{
+    "_id": {
+      "$oid": "63efd887d77f436d2a94f7d3"
+    },
+    "componentName": "curl",
+    "license": "MIT",
+    "source": "curl",
+    "versionNumber": "7.79.1-r5",
+    "summaryCounts": {
+      "securityRisk": {
+        "critical": 1,
+        "medium": 1,
+        "negligible": 1,
+        "total": 3
+      }
+    },
+    "cve": [
+      {
+        "activityDate": "2023-02-14T19:33:22.659Z",
+        "identifier": "CVE-2022-32221",
+        "description": "When doing HTTP(S) transfers, libcurl might erroneously use the read callback (`CURLOPT_READFUNCTION`) to ask for data to send, even when the `CURLOPT_POSTFIELDS` option has been set, if the same handle previously was used to issue a `PUT` request which used that callback. This flaw may surprise the application and cause it to misbehave and either send off the wrong data or use memory after free or similar in the subsequent `POST` request. The problem exists in the logic for a reused handle when it is changed from a PUT to a POST.",
+        "overallscore": 9.8,
+        "status": "new",
+        "CWE/CVE": [
+          "CVE-2022-32221"
+        ],
+        "severity": "critical",
+        "nvdLink": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-32221",
+        "nvdScore": 9.8,
+        "nvdSeverity": "critical"
+      },
+      {
+        "activityDate": "2023-02-14T19:33:22.659Z",
+        "identifier": "CVE-2022-42915",
+        "description": "curl before 7.86.0 has a double free. If curl is told to use an HTTP proxy for a transfer with a non-HTTP(S) URL, it sets up the connection to the remote server by issuing a CONNECT request to the proxy, and then tunnels the rest of the protocol through. An HTTP proxy might refuse this request (HTTP proxies often only allow outgoing connections to specific port numbers, like 443 for HTTPS) and instead return a non-200 status code to the client. Due to flaws in the error/cleanup handling, this could trigger a double free in curl if one of the following schemes were used in the URL for the transfer: dict, gopher, gophers, ldap, ldaps, rtmp, rtmps, or telnet. The earliest affected version is 7.77.0.",
+        "overallscore": 7.4,
+        "status": "new",
+        "CWE/CVE": [
+          "CVE-2022-42915"
+        ],
+        "severity": "medium",
+        "nvdLink": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42915",
+        "nvdScore": 7.4,
+        "nvdSeverity": "medium"
+      },
+      {
+        "activityDate": "2023-02-14T19:33:22.659Z",
+        "identifier": "CVE-2022-42916",
+        "description": "In curl before 7.86.0, the HSTS check could be bypassed to trick it into staying with HTTP. Using its HSTS support, curl can be instructed to use HTTPS directly (instead of using an insecure cleartext HTTP step) even when HTTP is provided in the URL. This mechanism could be bypassed if the host name in the given URL uses IDN characters that get replaced with ASCII counterparts as part of the IDN conversion, e.g., using the character UTF-8 U+3002 (IDEOGRAPHIC FULL STOP) instead of the common ASCII full stop of U+002E (.). The earliest affected version is 7.77.0 2021-05-26.",
+        "overallscore": 7.5,
+        "status": "new",
+        "CWE/CVE": [
+          "CVE-2022-42915"
+        ],
+        "severity": "negligible",
+        "nvdLink": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42916",
+        "nvdScore": 4.5,
+        "nvdSeverity": "negligible"
+      }
+    ]
+  }]
